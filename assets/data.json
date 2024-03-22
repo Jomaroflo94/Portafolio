@@ -1,0 +1,293 @@
+{
+    "name": "Jose Manuel Romero Flores",
+    "title": "Backend Dev & Cloud",
+    "location": " Málaga, Andalucía, España",
+    "avatar": "/avatar.jpg",
+    "media": {
+        "email": "jomaroflo94@gmail.com",
+        "cv": "https://drive.google.com/file/d/1g1fjLKSpXohig0g8NjO0iSSVck_F9F1X/view?usp=drive_link",
+        "github": "https://github.com/Jomaroflo94",
+        "linkedin": "https://www.linkedin.com/in/jose-manuel-romero-flores-b07254118"
+    },
+    "about": "Descripción",
+    "technologies": [
+        {
+            "icon": "devicon-angular-plain",
+            "name": "Angular"
+        },
+        {
+            "icon": "devicon-python-plain",
+            "name": "Python"
+        },
+        {
+            "icon": "devicon-typescript-plain",
+            "name": "TypeScript"
+        },
+        {
+            "icon": "devicon-vscode-plain",
+            "name": "Visual Code"
+        },
+        {
+            "icon": "devicon-visualstudio-plain",
+            "name": "Visual Studio"
+        },
+        {
+            "icon": "devicon-azure-plain",
+            "name": "Azure"
+        },
+        {
+            "icon": "devicon-azuredevops-plain",
+            "name": "Devops"
+        },
+        {
+            "icon": "devicon-csharp-plain",
+            "name": "C-Sharp"
+        },
+        {
+            "icon": "devicon-dotnetcore-plain",
+            "name": ".NET"
+        },
+        {
+            "icon": "devicon-fastapi-plain",
+            "name": "FastAPI"
+        },
+        {
+            "icon": "devicon-javascript-plain",
+            "name": "JavaScript"
+        },
+        {
+            "icon": "devicon-jquery-plain",
+            "name": "JQuery"
+        },
+        {
+            "icon": "devicon-sqldeveloper-plain",
+            "name": "SQL-Server"
+        },
+        {
+            "icon": "devicon-nodejs-plain",
+            "name": "Node"
+        }
+    ],
+    "experience": [
+        {
+            "icon": "tag",
+            "title": "FullStack Dev & Cloud",
+            "subtitle": "Sogeti",
+            "description": "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows.",
+            "date": "4 años 6 meses",
+            "technologies": [
+                {
+                    "icon": "",
+                    "name": "WebApi"
+                },
+                {
+                    "icon": "",
+                    "name": "REST"
+                },
+                {
+                    "icon": "",
+                    "name": "SOAP"
+                },
+                {
+                    "icon": "",
+                    "name": "Angular"
+                },
+                {
+                    "icon": "",
+                    "name": ".Net"
+                },
+                {
+                    "icon": "",
+                    "name": "Dapper"
+                },
+                {
+                    "icon": "",
+                    "name": "SQL Server"
+                },
+                {
+                    "icon": "",
+                    "name": "IIS"
+                },
+                {
+                    "icon": "",
+                    "name": "Azure"
+                },
+                {
+                    "icon": "",
+                    "name": "Devops"
+                },
+                {
+                    "icon": "",
+                    "name": "SOLID"
+                },
+                {
+                    "icon": "",
+                    "name": "Design Patterns"
+                }
+            ]
+        },
+        {
+            "icon": "tag",
+            "title": "Anls, Solution Dev",
+            "subtitle": "Sogeti",
+            "description": "Desarrollo y mantenimiento de aplicaciones Web.\nGestión de AM, análisis y estimaciones de cambios / desarrollos y diseño de técnicos / funcionales. ",
+            "date": "1 año 1 mes",
+            "technologies": [
+                {
+                    "icon": "",
+                    "name": "WebApi"
+                },
+                {
+                    "icon": "",
+                    "name": "REST"
+                },
+                {
+                    "icon": "",
+                    "name": "SOAP"
+                },
+                {
+                    "icon": "",
+                    "name": "Angular"
+                },
+                {
+                    "icon": "",
+                    "name": "AngularJS"
+                },
+                {
+                    "icon": "",
+                    "name": ".Net"
+                },
+                {
+                    "icon": "",
+                    "name": "SQL Server"
+                },
+                {
+                    "icon": "",
+                    "name": "IIS"
+                },
+                {
+                    "icon": "",
+                    "name": "Azure"
+                },
+                {
+                    "icon": "",
+                    "name": "Devops"
+                }
+            ]
+        },
+        {
+            "icon": "tag",
+            "title": "Anls, Solution Dev",
+            "subtitle": "Avanade",
+            "description": "Desarrollo y mantenimiento de aplicaciones Web.",
+            "date": "1 año 1 mes",
+            "technologies": [
+                {
+                    "icon": "",
+                    "name": "Angular"
+                },
+                {
+                    "icon": "",
+                    "name": ".Net"
+                },
+                {
+                    "icon": "",
+                    "name": "SQL Server"
+                },
+                {
+                    "icon": "",
+                    "name": "IIS"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "icon": "tag",
+            "title": "Titulo",
+            "subtitle": "Subtitulo",
+            "description": "Descripción",
+            "technologies": [
+                {
+                    "icon": "",
+                    "name": "Stack 1"
+                },
+                {
+                    "icon": "",
+                    "name": "Stack 2"
+                },
+                {
+                    "icon": "",
+                    "name": "Stack 3"
+                }
+            ],
+            "image": "/favicon.ico",
+            "url": "https://url.com",
+            "github": "https://url.com"
+        },
+        {
+            "icon": "tag",
+            "title": "Titulo",
+            "subtitle": "Subtitulo",
+            "description": "Descripción",
+            "technologies": [
+                {
+                    "icon": "",
+                    "name": "Stack 1"
+                },
+                {
+                    "icon": "",
+                    "name": "Stack 2"
+                },
+                {
+                    "icon": "",
+                    "name": "Stack 3"
+                }
+            ],
+            "image": "/favicon.ico",
+            "url": "https://url.com",
+            "github": "https://url.com"
+        }
+    ],
+    "training": [
+        {
+            "icon": "tag",
+            "title": "Grado en Ingeniería de Tecnologías de Telecomunicación",
+            "subtitle": "Escuela Técnica Superior de Ingeniería de Telecomunicación",
+            "description": "Universidad de Málaga",
+            "certificate": "https://drive.google.com/file/d/18JLnE5G4UmAaQ9yRpe1tj20-K1VX706Q/view?usp=drive_link"
+        }
+    ],
+    "others": [
+        {
+            "title": "Título 1",
+            "subtitle": "Subtítulo 1",
+            "image": "/favicon.ico",
+            "url": "https://google.com"
+        },
+        {
+            "title": "Título 2",
+            "subtitle": "Subtítulo 2",
+            "image": "/favicon.ico",
+            "url": "https://google.com"
+        },
+        {
+            "title": "Título 3",
+            "subtitle": "Subtítulo 3",
+            "image": "/favicon.ico",
+            "url": "https://google.com"
+        },
+        {
+            "title": "Título 4",
+            "subtitle": "Subtítulo 4",
+            "image": "/favicon.ico",
+            "url": "https://google.com"
+        },
+        {
+            "title": "Título 5",
+            "subtitle": "Subtítulo 5",
+            "image": "/favicon.ico",
+            "url": "https://google.com"
+        }
+    ]
+}

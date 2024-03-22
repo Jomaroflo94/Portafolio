@@ -1,0 +1,35 @@
+import reflex as rx
+
+from enum import Enum
+
+MAX_WIDTH = "900px"
+IMAGE_HEIGHT="200px"
+
+# Tamaños soportados por CSS
+class EmSize(Enum):
+    DEFAULT = '1em'  # 16px
+    SMALL = '1.5em'   # 24px
+    MEDIUM = '2em'   # 32px
+    BIG = '3em'      # 48px
+
+# Tamaños soportados por Radix UI
+class Size(Enum):
+    ZERO = None
+    SMALL = '2'    # 8px
+    DEFAULT = '4'  # 16px por defecto (1em)
+    MEDIUM = '6'   # 32px
+    BIG = '8'      # 48px
+    MAXIMUN = '9'  # 54px
+
+STYLESHEETS= [
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+]
+
+BASE_STYLE = {
+    rx.button: {
+        "--cursor-button": "pointer"
+    },
+    rx.link: {
+        "text-decoration": "none"
+    }
+}
