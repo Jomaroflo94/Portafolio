@@ -2,15 +2,18 @@ import reflex as rx
 
 from portafolio.components.heading import heading
 from portafolio.components.info_detail import info_detail
-from portafolio.services.data import Info
+from portafolio.services.data import Section
 from portafolio.styles.styles import Size
 
-def info(title: str, data: list[Info]) -> rx.Component:
+def sections(data: list[Section], title="", show_icon=True) -> rx.Component:
     return rx.vstack(
-        heading(title),
+        rx.cond(
+            title != "",
+            heading(title)
+        ),
         rx.vstack(
             *[
-                info_detail(item)
+                info_detail(item, show_icon)
                 for item in data
             ],
             spacing=Size.MEDIUM.value,

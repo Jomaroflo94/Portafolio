@@ -1,12 +1,13 @@
 import reflex as rx
 
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size
-from portafolio.views.about import about
-from portafolio.views.aptitudes import aptitudes
-from portafolio.views.footer import footer
-from portafolio.views.header import header
-from portafolio.views.info import info
-from portafolio.views.others import others
+from portafolio.views.body.about import about
+from portafolio.views.body.aptitudes import aptitudes
+from portafolio.views.body.experiences import experiences
+from portafolio.views.footer.footer import footer
+from portafolio.views.header.header import header_mobile, header_desktop
+from portafolio.views.body.sections import sections
+from portafolio.views.body.others import others
 from portafolio.services.data import data
 
 DATA = data
@@ -15,21 +16,27 @@ def index() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
         rx.vstack(
-            header(DATA),
+            rx.mobile_only(
+                header_mobile(DATA)
+            ),
+            rx.tablet_and_desktop(
+                header_desktop(DATA)
+            ),
             about(DATA.about),
             rx.divider(),
             aptitudes(DATA.technologies),
             rx.divider(),
-            info("Experiencia", DATA.experience),
-            info("Proyectos", DATA.projects),
-            info("Formación", DATA.training),
+            experiences(DATA.experiences, "Experiencia"),
+            rx.divider(),
+            sections(DATA.projects, "Proyectos"),
+            sections(DATA.training, "Formación"),
             others(DATA.others),
             rx.divider(),
             footer(DATA),
             spacing=Size.MEDIUM.value,
             max_width=MAX_WIDTH,
-            padding_x=EmSize.MEDIUM.value,
-            padding_y=EmSize.BIG.value,
+            padding_x=EmSize.BIG.value,
+            padding_y=EmSize.MAXIMUN.value,
             width="100%"
         )
     )
@@ -39,7 +46,7 @@ app = rx.App(
     stylesheets=STYLESHEETS,
     theme=rx.theme(
         appearance="dark",
-        accent_color="green",
+        accent_color="violet",
         radius="large"
     )
 )

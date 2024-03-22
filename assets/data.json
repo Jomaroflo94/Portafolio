@@ -2,6 +2,7 @@
     "name": "Jose Manuel Romero Flores",
     "title": "Backend Dev & Cloud",
     "location": " Málaga, Andalucía, España",
+    "last_update": "22 Marzo 2024",
     "avatar": "/avatar.jpg",
     "media": {
         "email": "jomaroflo94@gmail.com",
@@ -68,135 +69,147 @@
             "name": "Node"
         }
     ],
-    "experience": [
+    "experiences": [
         {
-            "icon": "tag",
-            "title": "FullStack Dev & Cloud",
-            "subtitle": "Sogeti",
-            "description": "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows.",
-            "date": "4 años 6 meses",
-            "technologies": [
+            "name": "Sogeti",
+            "image": "/company2.jpg",
+            "sections": [
                 {
-                    "icon": "",
-                    "name": "WebApi"
+                    "icon": "tag",
+                    "title": "FullStack Dev & Cloud",
+                    "subtitle": "Sogeti",
+                    "description": "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows.",
+                    "date": "4 años 6 meses",
+                    "technologies": [
+                        {
+                            "icon": "",
+                            "name": "WebApi"
+                        },
+                        {
+                            "icon": "",
+                            "name": "REST"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SOAP"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Angular"
+                        },
+                        {
+                            "icon": "",
+                            "name": ".Net"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Dapper"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SQL Server"
+                        },
+                        {
+                            "icon": "",
+                            "name": "IIS"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Azure"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Devops"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SOLID"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Design Patterns"
+                        }
+                    ]
                 },
                 {
-                    "icon": "",
-                    "name": "REST"
-                },
-                {
-                    "icon": "",
-                    "name": "SOAP"
-                },
-                {
-                    "icon": "",
-                    "name": "Angular"
-                },
-                {
-                    "icon": "",
-                    "name": ".Net"
-                },
-                {
-                    "icon": "",
-                    "name": "Dapper"
-                },
-                {
-                    "icon": "",
-                    "name": "SQL Server"
-                },
-                {
-                    "icon": "",
-                    "name": "IIS"
-                },
-                {
-                    "icon": "",
-                    "name": "Azure"
-                },
-                {
-                    "icon": "",
-                    "name": "Devops"
-                },
-                {
-                    "icon": "",
-                    "name": "SOLID"
-                },
-                {
-                    "icon": "",
-                    "name": "Design Patterns"
+                    "icon": "tag",
+                    "title": "Anls, Solution Dev",
+                    "subtitle": "Sogeti",
+                    "description": "Desarrollo y mantenimiento de aplicaciones Web.\nGestión de AM, análisis y estimaciones de cambios / desarrollos y diseño de técnicos / funcionales. ",
+                    "date": "1 año 1 mes",
+                    "technologies": [
+                        {
+                            "icon": "",
+                            "name": "WebApi"
+                        },
+                        {
+                            "icon": "",
+                            "name": "REST"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SOAP"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Angular"
+                        },
+                        {
+                            "icon": "",
+                            "name": "AngularJS"
+                        },
+                        {
+                            "icon": "",
+                            "name": ".Net"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SQL Server"
+                        },
+                        {
+                            "icon": "",
+                            "name": "IIS"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Azure"
+                        },
+                        {
+                            "icon": "",
+                            "name": "Devops"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "icon": "tag",
-            "title": "Anls, Solution Dev",
-            "subtitle": "Sogeti",
-            "description": "Desarrollo y mantenimiento de aplicaciones Web.\nGestión de AM, análisis y estimaciones de cambios / desarrollos y diseño de técnicos / funcionales. ",
-            "date": "1 año 1 mes",
-            "technologies": [
+            "name": "Avanade",
+            "image": "/company1.jpg",
+            "sections": [
                 {
-                    "icon": "",
-                    "name": "WebApi"
-                },
-                {
-                    "icon": "",
-                    "name": "REST"
-                },
-                {
-                    "icon": "",
-                    "name": "SOAP"
-                },
-                {
-                    "icon": "",
-                    "name": "Angular"
-                },
-                {
-                    "icon": "",
-                    "name": "AngularJS"
-                },
-                {
-                    "icon": "",
-                    "name": ".Net"
-                },
-                {
-                    "icon": "",
-                    "name": "SQL Server"
-                },
-                {
-                    "icon": "",
-                    "name": "IIS"
-                },
-                {
-                    "icon": "",
-                    "name": "Azure"
-                },
-                {
-                    "icon": "",
-                    "name": "Devops"
-                }
-            ]
-        },
-        {
-            "icon": "tag",
-            "title": "Anls, Solution Dev",
-            "subtitle": "Avanade",
-            "description": "Desarrollo y mantenimiento de aplicaciones Web.",
-            "date": "1 año 1 mes",
-            "technologies": [
-                {
-                    "icon": "",
-                    "name": "Angular"
-                },
-                {
-                    "icon": "",
-                    "name": ".Net"
-                },
-                {
-                    "icon": "",
-                    "name": "SQL Server"
-                },
-                {
-                    "icon": "",
-                    "name": "IIS"
+                    "icon": "tag",
+                    "title": "Anls, Solution Dev",
+                    "subtitle": "Avanade",
+                    "description": "Desarrollo y mantenimiento de aplicaciones Web.",
+                    "date": "1 año 1 mes",
+                    "technologies": [
+                        {
+                            "icon": "",
+                            "name": "Angular"
+                        },
+                        {
+                            "icon": "",
+                            "name": ".Net"
+                        },
+                        {
+                            "icon": "",
+                            "name": "SQL Server"
+                        },
+                        {
+                            "icon": "",
+                            "name": "IIS"
+                        }
+                    ]
                 }
             ]
         }
@@ -204,9 +217,9 @@
     "projects": [
         {
             "icon": "tag",
-            "title": "Titulo",
+            "title": "Prueba de proyectos",
             "subtitle": "Subtitulo",
-            "description": "Descripción",
+            "description": "Prueba de proyectos para comprobar hasta donde llega el ancho",
             "technologies": [
                 {
                     "icon": "",

@@ -13,7 +13,7 @@ def aptitudes(data : list[Technology]) -> rx.Component:
                 rx.badge(
                     rx.box(
                         class_name=aptitude.icon,
-                        font_size=EmSize.SMALL.value
+                        font_size=EmSize.MEDIUM.value
                     ),
                     rx.text(aptitude.name),
                     size="2"
