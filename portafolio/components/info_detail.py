@@ -15,17 +15,13 @@ def info_detail(data: Section, show_icon: bool) -> rx.Component:
             rx.vstack(
                 info_detail_text(data.title, data.subtitle, data.description),
                 info_detail_techologies(data.technologies),
-                info_detail_links(data.url, data.github),
-                spacing=Size.SMALL.value,
-                width="100%"
+                info_detail_links(data.url, data.github)
             ),
-            spacing=Size.DEFAULT.value,
-            width="100%"
+            spacing=Size.DEFAULT.value
         ),
         info_detail_image(data.image),
         info_detail_auxiliar(data.date, data.certificate),
         spacing=Size.DEFAULT.value,
-        width="100%",
         flex_direction=["column-reverse", "row"]
     )
 
@@ -35,7 +31,6 @@ def info_detail_text(title: str, subtitle: str, description: str) -> rx.Componen
         rx.text(subtitle),
         rx.text(
             description,
-            size=Size.SMALL.value,
             color_scheme="gray"
         )
     )
@@ -51,8 +46,7 @@ def info_detail_techologies(data: list[Technology]) -> rx.Component:
                 )
                 for item in data
             ],
-            wrap="wrap",
-            spacing=Size.SMALL.value
+            wrap="wrap"
         )
     )
 
@@ -107,7 +101,6 @@ def info_detail_auxiliar(date: str, certificate: str) -> rx.Component:
                         certificate
                     )
                 ),
-                spacing=Size.SMALL.value,
                 align="end"
             ),
             flex_grow=0

@@ -16,9 +16,7 @@ def sections(data: list[Section], title="", show_icon=True) -> rx.Component:
                 info_detail(item, show_icon)
                 for item in data
             ],
-            spacing=Size.MEDIUM.value,
-            width="100%"
+            spacing=Size.X_LARGE.value
         ),
-        spacing=Size.DEFAULT.value,
-        width="100%"
+        spacing=Size.DEFAULT.value
     )

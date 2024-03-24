@@ -1,41 +1,43 @@
 import reflex as rx
 
+from portafolio.components.heading import heading
 from portafolio.components.media import media
-from portafolio.services.data import Data
+from portafolio.services.data import Data, Media, Profile
 from portafolio.styles.styles import Size
 
-def footer(data: Data) -> rx.Component:
+def footer(profile: Profile, media_list: list[Media], is_mobile: bool) -> rx.Component:
     return rx.vstack(
         rx.flex(
-            rx.hstack(
-                rx.vstack(
-                    rx.text.strong(data.name),
-                    media(data.media),
-                    spacing=Size.SMALL.value,
-                    width="100%"
-                ),
-                spacing=Size.DEFAULT.value,
-                width="100%"
-            ),
-            rx.mobile_only(
-                footer_last_update(data.last_update, True)
-            ),
-            rx.tablet_and_desktop(
-                footer_last_update(data.last_update),
-                width="100%"
-            ),
-            spacing=Size.MEDIUM.value,
-            width="100%",
+            footer_media(profile.name, media_list, is_mobile),
+            footer_last_update(profile.last_update, is_mobile),
+            spacing=Size.DEFAULT.value,
             flex_direction=["column", "row"]
-        ),
-        spacing=Size.SMALL.value,
-        width="100%"
+        )
     )
 
-def footer_last_update(last_update: str, mobile=False)-> rx.Component:
+def footer_media(name: str, media_list: list[Media], is_mobile: bool)-> rx.Component:
+    return rx.hstack(
+        rx.vstack(
+            heading(
+                name,
+                as_="h3",
+                size=Size.X_SMALL if is_mobile else Size.SMALL
+            ),
+            media(media_list, is_mobile)
+        ),
+        spacing=Size.DEFAULT.value
+    )
+
+def footer_last_update(last_update: str, is_mobile: bool)-> rx.Component:
     return rx.vstack(
-        rx.text.strong("Última actualización:"),
-        rx.text(last_update),
-        width="100%",
-        align="end" if not mobile else "start"
+        heading(
+            "Última actualización:",
+            as_="h3",
+            size=Size.X_SMALL if is_mobile else Size.SMALL
+        ),
+        rx.text(
+            last_update,
+            size=Size.X_SMALL.value if is_mobile else Size.SMALL.value
+        ),
+        align="end" if not is_mobile else "start"
     )

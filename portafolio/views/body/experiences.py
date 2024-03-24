@@ -14,7 +14,7 @@ def experiences(experiences: list[Experience], title: str) -> rx.Component:
                 rx.vstack(
                     rx.image(
                         src=item.image,
-                        height=EmSize.MAXIMUN.value,
+                        height=EmSize.XX_LARGE.value,
                         width="auto",
                         object_fit="cover",
                         border_radius=EmSize.SMALL.value, 
@@ -27,78 +27,26 @@ def experiences(experiences: list[Experience], title: str) -> rx.Component:
                     #     ),
                     #     height="4em",
                     # ),
-                    spacing=Size.MEDIUM.value,
+                    spacing=Size.X_LARGE.value,
                     width="auto"
                 ),
                 rx.vstack(
                     rx.heading(
                         item.name,
-                        size=Size.MEDIUM.value
+                        size=Size.X_LARGE.value
                     ),
                     rx.vstack(
                         sections(
                             item.sections, 
                             show_icon=False
-                        ),
-                        spacing=Size.SMALL.value,
-                        width="100%"
+                        )
                     ),
                     padding_top=EmSize.SMALL.value,
-                    spacing=Size.MEDIUM.value,
-                    width="100%"
+                    spacing=Size.X_LARGE.value
                 ),
-                spacing=Size.DEFAULT.value,
-                width="100%"
+                spacing=Size.DEFAULT.value
             )
             for item in experiences
         ],
-        spacing=Size.MEDIUM.value,
-        width="100%"
+        spacing=Size.X_LARGE.value
     )
-
-
-
-
-    # return rx.vstack(
-    #     heading(title),
-    #     *[
-    #         rx.vstack(
-    #             rx.hstack(
-    #                 rx.image(
-    #                     src="/favicon.ico",
-    #                     height=EmSize.MAXIMUN.value,
-    #                     width="auto",
-    #                     object_fit="cover",
-    #                     border_radius=EmSize.SMALL.value, 
-    #                 ),
-    #                 rx.heading(
-    #                     item.name,
-    #                     size=Size.MEDIUM.value
-    #                 ),
-    #                 spacing=Size.DEFAULT.value,
-    #                 width="100%"
-    #             ),
-    #             rx.hstack(
-    #                 rx.center(
-    #                     rx.divider(
-    #                         orientation="vertical", 
-    #                         border_color="gray"
-    #                     ),
-    #                     height="4em"
-    #                 ),
-    #                 rx.vstack(
-    #                     sections(item.sections),
-    #                     spacing=Size.MEDIUM.value,
-    #                     width="100%"
-    #                 ),
-    #                 spacing=Size.MEDIUM.value,
-    #                 width="100%"
-    #             ),
-    #             spacing=Size.MEDIUM.value,
-    #             width="100%"
-    #         )
-    #         for item in experiences
-    #     ],
-    #     spacing=Size.MEDIUM.value,
-    #     width="100%"
-    # )

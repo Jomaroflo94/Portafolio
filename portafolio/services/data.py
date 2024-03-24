@@ -1,11 +1,19 @@
 import json
 
+class Profile:
+    def __init__(self, name, position, location, last_update, avatar):
+        self.name = name
+        self.position = position
+        self.location = location
+        self.last_update = last_update
+        self.avatar = avatar
+
 class Media:
-    def __init__(self, email, cv, github, linkedin):
-        self.email = email
-        self.cv = cv
-        self.github = github
-        self.linkedin = linkedin
+    def __init__(self, icon, url, is_primary, text=""):
+        self.icon = icon
+        self.url = url
+        self.is_primary = is_primary
+        self.text = text
 
 class Technology:
     def __init__(self, icon, name):
@@ -19,15 +27,15 @@ class Experience:
         self.sections = [Section(**section) for section in sections]
 
 class Section:
-    def __init__(self, icon, title, subtitle, description, date="", certificate="", 
-            technologies=[], image="", url="", github=""):
+    def __init__(self, icon, title, subtitle, description, date="", 
+            certificate="", technologies=[], image="", url="", github=""):
         self.icon = icon
         self.title = title
         self.subtitle = subtitle
         self.description = description
         self.date = date
         self.certificate = certificate
-        self.technologies = [Technology(**tech) for tech in technologies]
+        self.technologies = [Technology(**item) for item in technologies]
         self.image = image
         self.url = url
         self.github = github
@@ -40,20 +48,16 @@ class Other:
         self.url = url
 
 class Data:
-    def __init__(self, avatar, name, title, location, last_update, media, about, technologies, 
+    def __init__(self, profile, media, about, technologies, 
             experiences, projects, training, others):
-        self.avatar = avatar
-        self.name = name
-        self.title = title
-        self.location = location
-        self.last_update = last_update
-        self.media = Media(**media)
+        self.profile = Profile(**profile)
+        self.media = [Media(**item) for item in media]
         self.about = about
-        self.technologies = [Technology(**tech) for tech in technologies]
-        self.experiences = [Experience(**experience) for experience in experiences]
-        self.projects = [Section(**section) for section in projects]
-        self.training = [Section(**section) for section in training]
-        self.others = [Other(**other) for other in others]
+        self.technologies = [Technology(**item) for item in technologies]
+        self.experiences = [Experience(**item) for item in experiences]
+        self.projects = [Section(**item) for item in projects]
+        self.training = [Section(**item) for item in training]
+        self.others = [Other(**item) for item in others]
 
 with open("assets/data.json", encoding='utf-8') as file:
     json_data = json.load(file)

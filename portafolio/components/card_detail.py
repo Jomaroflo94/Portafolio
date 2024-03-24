@@ -10,7 +10,6 @@ def card_detail(data : Other) -> rx.Component:
                 rx.image(
                     src=data.image,
                     height=IMAGE_HEIGHT,
-                    width="100%",
                     object_fit="cover"
                 ),
                 pb=Size.DEFAULT.value
@@ -21,11 +20,9 @@ def card_detail(data : Other) -> rx.Component:
             ),
             rx.text(
                 data.subtitle,
-                size=Size.SMALL.value,
                 color_scheme="gray"
             ),
             href=data.url,
             is_external=True
-        ),
-        width="100%"
+        )
     )

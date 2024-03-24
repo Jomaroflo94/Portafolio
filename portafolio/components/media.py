@@ -4,27 +4,19 @@ from portafolio.components.icon_button import icon_button
 from portafolio.services.data import Media
 from portafolio.styles.styles import Size
 
-def media(data: Media) -> rx.Component:
+def media(data: list[Media], is_mobile=False) -> rx.Component:
     return rx.flex(
-        icon_button("mail", 
-            f"mailto:{data.email}", 
-            text=data.email
-        ),
-        rx.hstack(
-            icon_button("file-text", 
-                data.cv,
-                variant="surface"
-            ),
-            icon_button("github", 
-                data.github,
-                variant="surface"
-            ),
-            icon_button("linkedin", 
-                data.linkedin, 
-                variant="surface"
-            ),
-            spacing=Size.SMALL.value
-        ),
-        spacing=Size.SMALL.value,
-        flex_direction=["column", "column", "row"]
+        *[
+            icon_button(item.icon, 
+                f"{item.url}{item.text}", 
+                item.text,
+                "solid" if item.is_primary else "surface",
+                is_mobile
+            )
+            for item in data
+        ],
+        flex_direction="row",
+        width="auto",
+        flex_wrap="wrap",
+        spacing=Size.X_SMALL.value
     )

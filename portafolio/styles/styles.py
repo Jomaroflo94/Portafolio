@@ -7,20 +7,24 @@ IMAGE_HEIGHT="200px"
 
 # Tamaños soportados por CSS
 class EmSize(Enum):
+    X_SMALL = "0.25em"  # 4px
     SMALL = '0.5em'     # 8px
     DEFAULT = '1em'     # 16px
-    MEDIUM = '1.5em' # 24px
-    BIG = '2em'         # 32px
-    MAXIMUN = '3em'        # 48px
+    LARGE = '1.5em'     # 24px
+    X_LARGE = '2em'     # 32px
+    XX_LARGE = '3em'    # 48px
 
 # Tamaños soportados por Radix UI
 class Size(Enum):
     ZERO = None
-    SMALL = '2'         # 8px
+    XX_SMALL = '1'      # 4px
+    X_SMALL = '2'       # 8px
+    SMALL = '3'         # 12px
     DEFAULT = '4'       # 16px por defecto (1em)
-    MEDIUM = '6'        # 32px
-    MEDIUM_BIG = '7'    # 40px
-    BIG = '8'           # 48px
+    LARGE = '5'         # 24px
+    X_LARGE = '6'       # 32px
+    XX_LARGE = '7'      # 40px
+    XXX_LARGE = '8'     # 48px
     MAXIMUN = '9'       # 54px
 
 STYLESHEETS= [
@@ -28,6 +32,18 @@ STYLESHEETS= [
 ]
 
 BASE_STYLE = {
+    rx.grid: {
+        "width": "100%"
+    },
+    rx.card: {
+        "width": "100%"
+    },
+    rx.image: {
+        "width": "100%"
+    },
+    rx.flex: {
+        "width": "100%"
+    },
     rx.hstack: {
         "width": "100%"
     },
