@@ -5,8 +5,9 @@ from portafolio.components.heading import heading
 from portafolio.services.data import Technology
 from portafolio.styles.styles import EmSize, Size
 
-def aptitudes(data : list[Technology], is_mobile: bool) -> rx.Component:
+def technologies(data : list[Technology], is_mobile: bool) -> rx.Component:
     return rx.vstack(
+        rx.divider(),
         heading(
             "Tecnologías",
             size=Size.DEFAULT if is_mobile else Size.X_LARGE

@@ -27,13 +27,14 @@ class Experience:
         self.sections = [Section(**section) for section in sections]
 
 class Section:
-    def __init__(self, icon, title, subtitle, description, date="", 
-             image="", technologies=[], media=[]):
-        self.icon = icon
+    def __init__(self, title, subtitle, date="", icon="", image_icon="",
+            image="", description=[], technologies=[], media=[]):
         self.title = title
         self.subtitle = subtitle
-        self.description = description
+        self.description = [str(item) for item in description]
         self.date = date
+        self.icon = icon
+        self.image_icon = image_icon
         self.technologies = [Technology(**item) for item in technologies]
         self.image = image
         self.media = [Media(**item) for item in media]
@@ -46,16 +47,16 @@ class Other:
         self.url = url
 
 class Data:
-    def __init__(self, profile, media, about, technologies, 
-            experiences, projects, training, others):
+    def __init__(self, profile, media, technologies, experiences,
+            projects, training, others, about=[]):
         self.profile = Profile(**profile)
         self.media = [Media(**item) for item in media]
-        self.about = about
         self.technologies = [Technology(**item) for item in technologies]
         self.experiences = [Experience(**item) for item in experiences]
         self.projects = [Section(**item) for item in projects]
         self.training = [Section(**item) for item in training]
         self.others = [Other(**item) for item in others]
+        self.about = [str(item) for item in about]
 
 with open("assets/data.json", encoding='utf-8') as file:
     json_data = json.load(file)

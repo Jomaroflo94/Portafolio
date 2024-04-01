@@ -6,21 +6,23 @@ from portafolio.components.icon_button import icon_button
 from portafolio.services.data import Media, Section, Technology
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
-def section_detail(data: Section, is_mobile: bool, show_icon: bool) -> rx.Component:
+def section_detail(data: Section, is_mobile: bool) -> rx.Component:
     return rx.cond(
         is_mobile,
-        section_detail_mobile(data, show_icon),
-        section_detail_desktop(data, show_icon)
+        section_detail_mobile(data),
+        section_detail_desktop(data)
     )
 
-def section_detail_desktop(data: Section, show_icon: bool) -> rx.Component:
+def section_detail_desktop(data: Section) -> rx.Component:
     return rx.flex(
         rx.hstack(
-            section_icon(data.icon, show_icon),
+            section_icon(data.icon),
+            section_image_icon(data.image_icon),
             rx.vstack(
                 heading(data.title, as_="h3", size=Size.DEFAULT),
                 section_content(data.subtitle, data.description, 
-                    data.media, data.technologies)
+                    data.media, data.technologies),
+                spacing=Size.XX_SMALL.value
             ),
             spacing=Size.DEFAULT.value
         ),
@@ -30,49 +32,77 @@ def section_detail_desktop(data: Section, show_icon: bool) -> rx.Component:
         flex_direction="row"
     )
 
-def section_detail_mobile(data: Section, show_icon: bool) -> rx.Component:
+def section_detail_mobile(data: Section) -> rx.Component:
     return rx.flex(
         section_detail_image(data.image),
         section_detail_auxiliar(data.date),
         rx.vstack(
-            rx.hstack(
-                section_icon(data.icon, show_icon, True),
-                heading(data.title, as_="h3", size=Size.SMALL),
-                spacing=Size.DEFAULT.value
+            rx.center(
+                section_icon(data.icon, True),
+                section_image_icon(data.image_icon, True),
+                heading(data.title, as_="h3", size=Size.X_SMALL),
+                spacing=Size.SMALL.value
             ),
             section_content(data.subtitle, data.description, 
                 data.media, data.technologies, True),
-            spacing=Size.DEFAULT.value
+            spacing=Size.SMALL.value
         ),
         spacing=Size.DEFAULT.value,
-        flex_direction="column"
+        flex_direction="column",
+        background="rgba(110,86,207,.2)",
+        padding=EmSize.DEFAULT.value,
+        border_radius=EmSize.DEFAULT.value
     )
 
-def section_icon(icon: str, show_icon: bool, 
-        is_mobile=False) -> rx.Component:
+def section_icon(icon: str, is_mobile=False) -> rx.Component:
     return rx.cond(
-        show_icon,
-        icon_badge(icon, 
+        icon != "",
+        icon_badge(
+            icon=icon if icon != "" else "tag", 
             is_mobile=is_mobile
+        )
+    ) 
+
+def section_image_icon(icon_image: str, is_mobile=False) -> rx.Component:
+    return rx.cond(
+        icon_image != "",
+        rx.image(
+            src=icon_image,
+            height=EmSize.X_LARGE.value if is_mobile else EmSize.XX_LARGE.value,
+            width="auto",
+            object_fit="cover",
+            border_radius=EmSize.SMALL.value, 
         )
     )
 
-def section_content(subtitle: str, description: str, media: list[Media],
+def section_content(subtitle: str, description: list[str], media: list[Media],
         technologies: list[Technology], is_mobile=False) -> rx.Component:
     return rx.vstack(
-        rx.text(
-            subtitle,
-            size=Size.X_SMALL.value if is_mobile else Size.SMALL.value
+        rx.vstack(
+            rx.text(
+                subtitle,
+                size=Size.X_SMALL.value if is_mobile else Size.SMALL.value
+            ),
+            rx.vstack(
+                *[
+                    rx.text(
+                        item,
+                        size=Size.XX_SMALL.value if is_mobile else Size.SMALL.value,
+                        color_scheme="gray"
+                    )
+                    for item in description
+                ],
+                spacing=Size.XX_SMALL.value if is_mobile else Size.X_SMALL.value
+            ),
+            spacing=Size.X_SMALL.value if is_mobile else Size.SMALL.value
         ),
-        rx.text(
-            description,
-            size=Size.X_SMALL.value if is_mobile else Size.SMALL.value,
-            color_scheme="gray"
+        rx.vstack(
+            section_detail_techologies(technologies),
+            section_detail_links(media, is_mobile),
+            spacing=Size.X_SMALL.value if is_mobile else Size.SMALL.value
         ),
-        section_detail_techologies(technologies),
-        section_detail_links(media, is_mobile),
         spacing=Size.SMALL.value
-    )
+    ) 
 
 def section_detail_techologies(data: list[Technology]) -> rx.Component:
     return rx.cond(

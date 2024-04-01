@@ -3,14 +3,16 @@ import reflex as rx
 from portafolio.components.heading import heading
 from portafolio.components.media import media
 from portafolio.services.data import Data, Media, Profile
-from portafolio.styles.styles import Size
+from portafolio.styles.styles import EmSize, Size
 
 def footer(profile: Profile, media_list: list[Media], is_mobile: bool) -> rx.Component:
     return rx.vstack(
+        rx.divider(),
         rx.flex(
             footer_media(profile.name, media_list, is_mobile),
             footer_last_update(profile.last_update, is_mobile),
             spacing=Size.DEFAULT.value,
+            margin_top=EmSize.SMALL.value if is_mobile else EmSize.DEFAULT.value,
             flex_direction=["column", "row"]
         )
     )

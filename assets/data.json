@@ -28,7 +28,10 @@
             "is_primary": false
         }
     ],
-    "about": "Descripción",
+    "about": [
+        "Parrafo 1",
+        "Parrafo 2"
+    ],
     "technologies": [
         {
             "icon": "devicon-angular-plain",
@@ -93,10 +96,11 @@
             "image": "/company2.jpg",
             "sections": [
                 {
-                    "icon": "tag",
                     "title": "FullStack Dev & Cloud",
                     "subtitle": "Sogeti",
-                    "description": "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows.",
+                    "description": [
+                        "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows."
+                    ],
                     "date": "4 años 6 meses",
                     "technologies": [
                         {
@@ -150,10 +154,12 @@
                     ]
                 },
                 {
-                    "icon": "tag",
                     "title": "Anls, Solution Dev",
                     "subtitle": "Sogeti",
-                    "description": "Desarrollo y mantenimiento de aplicaciones Web.\nGestión de AM, análisis y estimaciones de cambios / desarrollos y diseño de técnicos / funcionales. ",
+                    "description": [
+                        "Desarrollo y mantenimiento de aplicaciones Web.",
+                        "Gestión de AM, análisis y estimaciones de cambios."
+                    ],
                     "date": "1 año 1 mes",
                     "technologies": [
                         {
@@ -205,10 +211,11 @@
             "image": "/company1.jpg",
             "sections": [
                 {
-                    "icon": "tag",
                     "title": "Anls, Solution Dev",
                     "subtitle": "Avanade",
-                    "description": "Desarrollo y mantenimiento de aplicaciones Web.",
+                    "description": [
+                        "Desarrollo y mantenimiento de aplicaciones Web."
+                    ],
                     "date": "1 año 1 mes",
                     "technologies": [
                         {
@@ -237,7 +244,10 @@
             "icon": "tag",
             "title": "Prueba de proyectos",
             "subtitle": "Subtitulo",
-            "description": "Prueba de proyectos para comprobar hasta donde llega el ancho",
+            "description": [
+                "Prueba de proyectos para comprobar hasta donde llega el ancho",
+                "Prueba de proyectos para comprobar hasta donde llega el ancho"
+            ],
             "image": "/favicon.ico",
             "technologies": [
                 {
@@ -271,49 +281,43 @@
             ]
         },
         {
-            "icon": "tag",
-            "title": "Titulo",
-            "subtitle": "Subtitulo",
-            "description": "Descripción",
-            "image": "/favicon.ico",
+            "icon": "layout-template",
+            "title": "Portafolio Web",
+            "subtitle": "Plantilla de Portafolio",
+            "description": [
+                "Código web de este mismo Portafolio en Python, utilizando el framework Reflex."
+            ],
             "technologies": [
                 {
                     "icon": "",
-                    "name": "Stack 1"
+                    "name": "Python"
                 },
                 {
                     "icon": "",
-                    "name": "Stack 2"
+                    "name": "Reflex"
                 },
                 {
                     "icon": "",
-                    "name": "Stack 3"
+                    "name": "CSS"
                 }
             ],
             "media": [
                 {
-                    "icon": "link",
-                    "url": "https://url.com",
-                    "is_primary": false
-                },
-                {
                     "icon": "github",
-                    "url": "https://url.com",
+                    "url": "https://github.com/Jomaroflo94/Portafolio",
                     "is_primary": false
-                },
-                {
-                    "icon": "shield-check",
-                    "url": "https://url.com"
                 }
             ]
         }
     ],
     "training": [
         {
-            "icon": "tag",
+            "image_icon": "/uma.jpg",
             "title": "Grado en Ingeniería de Tecnologías de Telecomunicación",
             "subtitle": "Escuela Técnica Superior de Ingeniería de Telecomunicación",
-            "description": "Universidad de Málaga",
+            "description": [
+                "Universidad de Málaga"
+            ],
             "media": [
                 {
                     "icon": "shield-check",
