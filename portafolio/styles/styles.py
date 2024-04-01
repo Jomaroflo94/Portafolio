@@ -3,7 +3,7 @@ import reflex as rx
 from enum import Enum
 
 MAX_WIDTH = "900px"
-IMAGE_HEIGHT="200px"
+IMAGE_HEIGHT="180px"
 
 # Tamaños soportados por CSS
 class EmSize(Enum):

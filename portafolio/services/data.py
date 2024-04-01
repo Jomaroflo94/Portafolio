@@ -9,7 +9,7 @@ class Profile:
         self.avatar = avatar
 
 class Media:
-    def __init__(self, icon, url, is_primary, text=""):
+    def __init__(self, icon, url, is_primary=True, text=""):
         self.icon = icon
         self.url = url
         self.is_primary = is_primary
@@ -28,17 +28,15 @@ class Experience:
 
 class Section:
     def __init__(self, icon, title, subtitle, description, date="", 
-            certificate="", technologies=[], image="", url="", github=""):
+             image="", technologies=[], media=[]):
         self.icon = icon
         self.title = title
         self.subtitle = subtitle
         self.description = description
         self.date = date
-        self.certificate = certificate
         self.technologies = [Technology(**item) for item in technologies]
         self.image = image
-        self.url = url
-        self.github = github
+        self.media = [Media(**item) for item in media]
 
 class Other:
     def __init__(self, title, subtitle, image, url):

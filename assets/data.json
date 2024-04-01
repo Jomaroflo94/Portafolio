@@ -10,8 +10,7 @@
         {
             "icon": "mail",
             "text": "jomaroflo94@gmail.com",
-            "url": "mailto:",
-            "is_primary": true
+            "url": "mailto:"
         },
         {
             "icon": "file-text",
@@ -239,6 +238,7 @@
             "title": "Prueba de proyectos",
             "subtitle": "Subtitulo",
             "description": "Prueba de proyectos para comprobar hasta donde llega el ancho",
+            "image": "/favicon.ico",
             "technologies": [
                 {
                     "icon": "",
@@ -253,15 +253,29 @@
                     "name": "Stack 3"
                 }
             ],
-            "image": "/favicon.ico",
-            "url": "https://url.com",
-            "github": "https://url.com"
+            "media": [
+                {
+                    "icon": "link",
+                    "url": "https://url.com",
+                    "is_primary": false
+                },
+                {
+                    "icon": "github",
+                    "url": "https://url.com",
+                    "is_primary": false
+                },
+                {
+                    "icon": "shield-check",
+                    "url": "https://url.com"
+                }
+            ]
         },
         {
             "icon": "tag",
             "title": "Titulo",
             "subtitle": "Subtitulo",
             "description": "Descripción",
+            "image": "/favicon.ico",
             "technologies": [
                 {
                     "icon": "",
@@ -276,9 +290,22 @@
                     "name": "Stack 3"
                 }
             ],
-            "image": "/favicon.ico",
-            "url": "https://url.com",
-            "github": "https://url.com"
+            "media": [
+                {
+                    "icon": "link",
+                    "url": "https://url.com",
+                    "is_primary": false
+                },
+                {
+                    "icon": "github",
+                    "url": "https://url.com",
+                    "is_primary": false
+                },
+                {
+                    "icon": "shield-check",
+                    "url": "https://url.com"
+                }
+            ]
         }
     ],
     "training": [
@@ -287,7 +314,12 @@
             "title": "Grado en Ingeniería de Tecnologías de Telecomunicación",
             "subtitle": "Escuela Técnica Superior de Ingeniería de Telecomunicación",
             "description": "Universidad de Málaga",
-            "certificate": "https://drive.google.com/file/d/18JLnE5G4UmAaQ9yRpe1tj20-K1VX706Q/view?usp=drive_link"
+            "media": [
+                {
+                    "icon": "shield-check",
+                    "url": "https://drive.google.com/file/d/18JLnE5G4UmAaQ9yRpe1tj20-K1VX706Q/view?usp=drive_link"
+                }
+            ]
         }
     ],
     "others": [
