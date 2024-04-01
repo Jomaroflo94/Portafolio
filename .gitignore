@@ -131,3 +131,5 @@ var/
 venv.bak/
 venv/
 wheels/
+public/
+build_windows.bat

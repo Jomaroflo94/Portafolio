@@ -25,7 +25,8 @@ def footer_media(name: str, media_list: list[Media], is_mobile: bool)-> rx.Compo
                 as_="h3",
                 size=Size.X_SMALL if is_mobile else Size.SMALL
             ),
-            media(media_list, is_mobile)
+            media(media_list, is_mobile),
+            spacing=Size.X_SMALL.value
         ),
         spacing=Size.DEFAULT.value
     )
@@ -41,5 +42,6 @@ def footer_last_update(last_update: str, is_mobile: bool)-> rx.Component:
             last_update,
             size=Size.X_SMALL.value if is_mobile else Size.SMALL.value
         ),
-        align="end" if not is_mobile else "start"
+        align="end" if not is_mobile else "start",
+        spacing=Size.XX_SMALL.value if is_mobile else Size.X_SMALL.value
     )
