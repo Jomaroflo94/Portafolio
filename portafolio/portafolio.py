@@ -17,6 +17,7 @@ image = "/avatar.jpg"
 
 def index() -> rx.Component:
     return rx.center(
+        rx.script("document.documentElement.lang='es'"),
         # rx.theme_panel(),
         rx.mobile_only(
             content(True),
