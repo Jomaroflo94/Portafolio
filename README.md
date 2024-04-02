@@ -8,4 +8,4 @@
 Proyecto web de portafolio profesional. 
 Programado con [Python](https://www.python.org/) haciendo uso del framework [Reflex](https://reflex.dev/) y desplegado en [Vercel](https://vercel.com/) de forma automática a través de [Github Actions](https://github.com/features/actions), tanto Preview como Production.
 
-### Visita [https://jomaroflo94-portafolio.reflex.run/](https://jomaroflo94-portafolio.reflex.run/)
+### Visita [https://jomaroflo94-portafolio.vercel.app/](https://jomaroflo94-portafolio.vercel.app/)
