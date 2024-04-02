@@ -58,7 +58,7 @@ class Data:
         self.others = [Other(**item) for item in others]
         self.about = [str(item) for item in about]
 
-with open("assets/data.json", encoding='utf-8') as file:
+with open("portafolio/services/data.json", encoding='utf-8') as file:
     json_data = json.load(file)
 
 data = Data(**json_data)
