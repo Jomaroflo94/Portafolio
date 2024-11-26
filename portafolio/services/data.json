@@ -1,361 +1,359 @@
 {
-    "profile": {
-        "name": "Jose Manuel Romero Flores",
-        "position": "Backend Dev & Cloud",
-        "location": " Málaga, Andalucía, España",
-        "last_update": "22 Marzo 2024",
-        "avatar": "/avatar.jpg"
+  "profile": {
+    "name": "Jose Manuel Romero Flores",
+    "position": "Backend Dev & Cloud",
+    "location": " Málaga, Andalucía, España",
+    "last_update": "22 Marzo 2024",
+    "avatar": "/avatar.jpg"
+  },
+  "media": [
+    {
+      "icon": "mail",
+      "text": "jomaroflo94@gmail.com",
+      "url": "mailto:"
     },
-    "media": [
+    {
+      "icon": "file-text",
+      "url": "https://drive.google.com/file/d/1g1fjLKSpXohig0g8NjO0iSSVck_F9F1X/view?usp=drive_link",
+      "is_primary": false
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/Jomaroflo94",
+      "is_primary": false
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/jose-manuel-romero-flores-b07254118",
+      "is_primary": false
+    }
+  ],
+  "about": [
+    "¡Saludos! Me llamo Jose Manuel 👋😄",
+    "Soy ingeniero de Software desde hace algo más de siete años. Aunque me gradué en ingeniería de tecnologías de telecomunicación, decidí dirigir mi camino profesional hacia el sector de la programación.",
+    "Desde mis comienzos, he ido especializándome poco a poco en los diferentes bloques del desarrollo de aplicaciones web, enfatizando la mayoría de mis conocimientos en la parte Backend y Cloud. Aun así, intento compaginar mi tiempo personal en estar actualizado y al tanto de los distintos avances tecnológicos.",
+    "Me gustaría seguir creciendo en el sector, transmitiendo mi conocimiento a otras personas y, por supuesto, recibiendo la ayuda de otros. Siempre estoy abierto a nuevas conexiones y oportunidades, no dudes en contactarme si crees que puedo serte de ayuda!"
+  ],
+  "technologies": [
+    {
+      "icon": "devicon-angular-plain",
+      "name": "Angular"
+    },
+    {
+      "icon": "devicon-python-plain",
+      "name": "Python"
+    },
+    {
+      "icon": "devicon-typescript-plain",
+      "name": "TypeScript"
+    },
+    {
+      "icon": "devicon-vscode-plain",
+      "name": "Visual Code"
+    },
+    {
+      "icon": "devicon-visualstudio-plain",
+      "name": "Visual Studio"
+    },
+    {
+      "icon": "devicon-azure-plain",
+      "name": "Azure"
+    },
+    {
+      "icon": "devicon-azuredevops-plain",
+      "name": "Devops"
+    },
+    {
+      "icon": "devicon-csharp-plain",
+      "name": "C-Sharp"
+    },
+    {
+      "icon": "devicon-dotnetcore-plain",
+      "name": ".NET"
+    },
+    {
+      "icon": "devicon-fastapi-plain",
+      "name": "FastAPI"
+    },
+    {
+      "icon": "devicon-javascript-plain",
+      "name": "JavaScript"
+    },
+    {
+      "icon": "devicon-jquery-plain",
+      "name": "JQuery"
+    },
+    {
+      "icon": "devicon-sqldeveloper-plain",
+      "name": "SQL-Server"
+    },
+    {
+      "icon": "devicon-nodejs-plain",
+      "name": "Node"
+    }
+  ],
+  "experiences": [
+    {
+      "name": "Sogeti",
+      "image": "/company2.jpg",
+      "sections": [
         {
-            "icon": "mail",
-            "text": "jomaroflo94@gmail.com",
-            "url": "mailto:"
+          "title": "FullStack Dev & Cloud",
+          "subtitle": "Sogeti",
+          "description": [
+            "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows."
+          ],
+          "date": "4 años 6 meses",
+          "technologies": [
+            {
+              "icon": "",
+              "name": "WebApi"
+            },
+            {
+              "icon": "",
+              "name": "REST"
+            },
+            {
+              "icon": "",
+              "name": "SOAP"
+            },
+            {
+              "icon": "",
+              "name": "Angular"
+            },
+            {
+              "icon": "",
+              "name": ".Net"
+            },
+            {
+              "icon": "",
+              "name": "Dapper"
+            },
+            {
+              "icon": "",
+              "name": "SQL Server"
+            },
+            {
+              "icon": "",
+              "name": "IIS"
+            },
+            {
+              "icon": "",
+              "name": "Azure"
+            },
+            {
+              "icon": "",
+              "name": "Devops"
+            },
+            {
+              "icon": "",
+              "name": "SOLID"
+            },
+            {
+              "icon": "",
+              "name": "Design Patterns"
+            }
+          ]
         },
         {
-            "icon": "file-text",
-            "url": "https://drive.google.com/file/d/1g1fjLKSpXohig0g8NjO0iSSVck_F9F1X/view?usp=drive_link",
-            "is_primary": false
-        },
-        {
-            "icon": "github",
-            "url": "https://github.com/Jomaroflo94",
-            "is_primary": false
-        },
-        {
-            "icon": "linkedin",
-            "url": "https://www.linkedin.com/in/jose-manuel-romero-flores-b07254118",
-            "is_primary": false
+          "title": "Anls, Solution Dev",
+          "subtitle": "Sogeti",
+          "description": [
+            "Desarrollo y mantenimiento de aplicaciones Web.",
+            "Gestión de AM, análisis y estimaciones de cambios."
+          ],
+          "date": "1 año 1 mes",
+          "technologies": [
+            {
+              "icon": "",
+              "name": "WebApi"
+            },
+            {
+              "icon": "",
+              "name": "REST"
+            },
+            {
+              "icon": "",
+              "name": "SOAP"
+            },
+            {
+              "icon": "",
+              "name": "Angular"
+            },
+            {
+              "icon": "",
+              "name": "AngularJS"
+            },
+            {
+              "icon": "",
+              "name": ".Net"
+            },
+            {
+              "icon": "",
+              "name": "SQL Server"
+            },
+            {
+              "icon": "",
+              "name": "IIS"
+            },
+            {
+              "icon": "",
+              "name": "Azure"
+            },
+            {
+              "icon": "",
+              "name": "Devops"
+            }
+          ]
         }
-    ],
-    "about": [
-        "Parrafo 1",
-        "Parrafo 2"
-    ],
-    "technologies": [
+      ]
+    },
+    {
+      "name": "Avanade",
+      "image": "/company1.jpg",
+      "sections": [
         {
-            "icon": "devicon-angular-plain",
-            "name": "Angular"
-        },
-        {
-            "icon": "devicon-python-plain",
-            "name": "Python"
-        },
-        {
-            "icon": "devicon-typescript-plain",
-            "name": "TypeScript"
-        },
-        {
-            "icon": "devicon-vscode-plain",
-            "name": "Visual Code"
-        },
-        {
-            "icon": "devicon-visualstudio-plain",
-            "name": "Visual Studio"
-        },
-        {
-            "icon": "devicon-azure-plain",
-            "name": "Azure"
-        },
-        {
-            "icon": "devicon-azuredevops-plain",
-            "name": "Devops"
-        },
-        {
-            "icon": "devicon-csharp-plain",
-            "name": "C-Sharp"
-        },
-        {
-            "icon": "devicon-dotnetcore-plain",
-            "name": ".NET"
-        },
-        {
-            "icon": "devicon-fastapi-plain",
-            "name": "FastAPI"
-        },
-        {
-            "icon": "devicon-javascript-plain",
-            "name": "JavaScript"
-        },
-        {
-            "icon": "devicon-jquery-plain",
-            "name": "JQuery"
-        },
-        {
-            "icon": "devicon-sqldeveloper-plain",
-            "name": "SQL-Server"
-        },
-        {
-            "icon": "devicon-nodejs-plain",
-            "name": "Node"
+          "title": "Anls, Solution Dev",
+          "subtitle": "Avanade",
+          "description": ["Desarrollo y mantenimiento de aplicaciones Web."],
+          "date": "1 año 1 mes",
+          "technologies": [
+            {
+              "icon": "",
+              "name": "Angular"
+            },
+            {
+              "icon": "",
+              "name": ".Net"
+            },
+            {
+              "icon": "",
+              "name": "SQL Server"
+            },
+            {
+              "icon": "",
+              "name": "IIS"
+            }
+          ]
         }
-    ],
-    "experiences": [
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "icon": "tag",
+      "title": "Prueba de proyectos",
+      "subtitle": "Subtitulo",
+      "description": [
+        "Prueba de proyectos para comprobar hasta donde llega el ancho",
+        "Prueba de proyectos para comprobar hasta donde llega el ancho"
+      ],
+      "image": "/favicon.ico",
+      "technologies": [
         {
-            "name": "Sogeti",
-            "image": "/company2.jpg",
-            "sections": [
-                {
-                    "title": "FullStack Dev & Cloud",
-                    "subtitle": "Sogeti",
-                    "description": [
-                        "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows."
-                    ],
-                    "date": "4 años 6 meses",
-                    "technologies": [
-                        {
-                            "icon": "",
-                            "name": "WebApi"
-                        },
-                        {
-                            "icon": "",
-                            "name": "REST"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SOAP"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Angular"
-                        },
-                        {
-                            "icon": "",
-                            "name": ".Net"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Dapper"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SQL Server"
-                        },
-                        {
-                            "icon": "",
-                            "name": "IIS"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Azure"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Devops"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SOLID"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Design Patterns"
-                        }
-                    ]
-                },
-                {
-                    "title": "Anls, Solution Dev",
-                    "subtitle": "Sogeti",
-                    "description": [
-                        "Desarrollo y mantenimiento de aplicaciones Web.",
-                        "Gestión de AM, análisis y estimaciones de cambios."
-                    ],
-                    "date": "1 año 1 mes",
-                    "technologies": [
-                        {
-                            "icon": "",
-                            "name": "WebApi"
-                        },
-                        {
-                            "icon": "",
-                            "name": "REST"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SOAP"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Angular"
-                        },
-                        {
-                            "icon": "",
-                            "name": "AngularJS"
-                        },
-                        {
-                            "icon": "",
-                            "name": ".Net"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SQL Server"
-                        },
-                        {
-                            "icon": "",
-                            "name": "IIS"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Azure"
-                        },
-                        {
-                            "icon": "",
-                            "name": "Devops"
-                        }
-                    ]
-                }
-            ]
+          "icon": "",
+          "name": "Stack 1"
         },
         {
-            "name": "Avanade",
-            "image": "/company1.jpg",
-            "sections": [
-                {
-                    "title": "Anls, Solution Dev",
-                    "subtitle": "Avanade",
-                    "description": [
-                        "Desarrollo y mantenimiento de aplicaciones Web."
-                    ],
-                    "date": "1 año 1 mes",
-                    "technologies": [
-                        {
-                            "icon": "",
-                            "name": "Angular"
-                        },
-                        {
-                            "icon": "",
-                            "name": ".Net"
-                        },
-                        {
-                            "icon": "",
-                            "name": "SQL Server"
-                        },
-                        {
-                            "icon": "",
-                            "name": "IIS"
-                        }
-                    ]
-                }
-            ]
+          "icon": "",
+          "name": "Stack 2"
+        },
+        {
+          "icon": "",
+          "name": "Stack 3"
         }
-    ],
-    "projects": [
+      ],
+      "media": [
         {
-            "icon": "tag",
-            "title": "Prueba de proyectos",
-            "subtitle": "Subtitulo",
-            "description": [
-                "Prueba de proyectos para comprobar hasta donde llega el ancho",
-                "Prueba de proyectos para comprobar hasta donde llega el ancho"
-            ],
-            "image": "/favicon.ico",
-            "technologies": [
-                {
-                    "icon": "",
-                    "name": "Stack 1"
-                },
-                {
-                    "icon": "",
-                    "name": "Stack 2"
-                },
-                {
-                    "icon": "",
-                    "name": "Stack 3"
-                }
-            ],
-            "media": [
-                {
-                    "icon": "link",
-                    "url": "https://url.com",
-                    "is_primary": false
-                },
-                {
-                    "icon": "github",
-                    "url": "https://url.com",
-                    "is_primary": false
-                },
-                {
-                    "icon": "shield-check",
-                    "url": "https://url.com"
-                }
-            ]
+          "icon": "link",
+          "url": "https://url.com",
+          "is_primary": false
         },
         {
-            "icon": "layout-template",
-            "title": "Portafolio Web",
-            "subtitle": "Plantilla de Portafolio",
-            "description": [
-                "Código web de este mismo Portafolio en Python, utilizando el framework Reflex."
-            ],
-            "technologies": [
-                {
-                    "icon": "",
-                    "name": "Python"
-                },
-                {
-                    "icon": "",
-                    "name": "Reflex"
-                },
-                {
-                    "icon": "",
-                    "name": "CSS"
-                }
-            ],
-            "media": [
-                {
-                    "icon": "github",
-                    "url": "https://github.com/Jomaroflo94/Portafolio",
-                    "is_primary": false
-                }
-            ]
+          "icon": "github",
+          "url": "https://url.com",
+          "is_primary": false
+        },
+        {
+          "icon": "shield-check",
+          "url": "https://url.com"
         }
-    ],
-    "training": [
+      ]
+    },
+    {
+      "icon": "layout-template",
+      "title": "Portafolio Web",
+      "subtitle": "Plantilla de Portafolio",
+      "description": [
+        "Código web de este mismo Portafolio en Python, utilizando el framework Reflex."
+      ],
+      "technologies": [
         {
-            "image_icon": "/uma.jpg",
-            "title": "Grado en Ingeniería de Tecnologías de Telecomunicación",
-            "subtitle": "Escuela Técnica Superior de Ingeniería de Telecomunicación",
-            "description": [
-                "Universidad de Málaga"
-            ],
-            "media": [
-                {
-                    "icon": "shield-check",
-                    "url": "https://drive.google.com/file/d/18JLnE5G4UmAaQ9yRpe1tj20-K1VX706Q/view?usp=drive_link"
-                }
-            ]
+          "icon": "",
+          "name": "Python"
+        },
+        {
+          "icon": "",
+          "name": "Reflex"
+        },
+        {
+          "icon": "",
+          "name": "CSS"
         }
-    ],
-    "others": [
+      ],
+      "media": [
         {
-            "title": "Título 1",
-            "subtitle": "Subtítulo 1",
-            "image": "/favicon.ico",
-            "url": "https://google.com"
-        },
-        {
-            "title": "Título 2",
-            "subtitle": "Subtítulo 2",
-            "image": "/favicon.ico",
-            "url": "https://google.com"
-        },
-        {
-            "title": "Título 3",
-            "subtitle": "Subtítulo 3",
-            "image": "/favicon.ico",
-            "url": "https://google.com"
-        },
-        {
-            "title": "Título 4",
-            "subtitle": "Subtítulo 4",
-            "image": "/favicon.ico",
-            "url": "https://google.com"
-        },
-        {
-            "title": "Título 5",
-            "subtitle": "Subtítulo 5",
-            "image": "/favicon.ico",
-            "url": "https://google.com"
+          "icon": "github",
+          "url": "https://github.com/Jomaroflo94/Portafolio",
+          "is_primary": false
         }
-    ]
+      ]
+    }
+  ],
+  "training": [
+    {
+      "image_icon": "/uma.jpg",
+      "title": "Grado en Ingeniería de Tecnologías de Telecomunicación",
+      "subtitle": "Escuela Técnica Superior de Ingeniería de Telecomunicación",
+      "description": ["Universidad de Málaga"],
+      "media": [
+        {
+          "icon": "shield-check",
+          "url": "https://drive.google.com/file/d/18JLnE5G4UmAaQ9yRpe1tj20-K1VX706Q/view?usp=drive_link"
+        }
+      ]
+    }
+  ],
+  "others": [
+    {
+      "title": "Título 1",
+      "subtitle": "Subtítulo 1",
+      "image": "/favicon.ico",
+      "url": "https://google.com"
+    },
+    {
+      "title": "Título 2",
+      "subtitle": "Subtítulo 2",
+      "image": "/favicon.ico",
+      "url": "https://google.com"
+    },
+    {
+      "title": "Título 3",
+      "subtitle": "Subtítulo 3",
+      "image": "/favicon.ico",
+      "url": "https://google.com"
+    },
+    {
+      "title": "Título 4",
+      "subtitle": "Subtítulo 4",
+      "image": "/favicon.ico",
+      "url": "https://google.com"
+    },
+    {
+      "title": "Título 5",
+      "subtitle": "Subtítulo 5",
+      "image": "/favicon.ico",
+      "url": "https://google.com"
+    }
+  ]
 }

@@ -90,6 +90,7 @@
 .spyproject
 .tox/
 .venv
+.vercel
 .web
 .webassets-cache
 /site
@@ -133,4 +134,3 @@ var/
 venv.bak/
 venv/
 wheels/
-.vercel
