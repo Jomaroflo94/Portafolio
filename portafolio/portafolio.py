@@ -10,9 +10,9 @@ from portafolio.views.body.sections import sections
 from portafolio.views.body.others import others
 from portafolio.services.data import data
 
-DATA = data
+DATA = data;
 title = "Portafolio - Jose Manuel Romero Flores"
-description = "Jose Manuel Romero Flores"
+description = DATA['profile']['name']
 image = "/avatar.jpg"
 
 def index() -> rx.Component:
@@ -31,14 +31,14 @@ def index() -> rx.Component:
 
 def content(is_mobile=False) -> rx.Component:
     return rx.vstack(
-        header(DATA.profile, DATA.media, is_mobile),
-        about(DATA.about, is_mobile),
-        technologies(DATA.technologies, is_mobile),
-        experiences(DATA.experiences, is_mobile, "Experiencia"),
-        sections(DATA.projects, is_mobile, "Proyectos"),
-        sections(DATA.training, is_mobile, "Formación"),
-        others(DATA.others, is_mobile),
-        footer(DATA.profile, DATA.media, is_mobile),
+        header(DATA['profile'], DATA['media'], is_mobile),
+        about(DATA['about'], is_mobile),
+        technologies(DATA['technologies'], is_mobile),
+        experiences(DATA['experiences'], is_mobile, "Experiencia"),
+        sections(DATA['projects'], is_mobile, "Proyectos"),
+        sections(DATA['training'], is_mobile, "Formación"),
+        # others(DATA['others'], is_mobile),
+        footer(DATA['profile'], DATA['media'], is_mobile),
         spacing=Size.DEFAULT.value if is_mobile else Size.LARGE.value,
         max_width=MAX_WIDTH,
         padding_x=EmSize.X_LARGE.value,

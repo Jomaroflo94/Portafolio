@@ -6,45 +6,45 @@ from portafolio.components.icon_button import icon_button
 from portafolio.services.data import Media, Section, Technology
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
-def section_detail(data: Section, is_mobile: bool) -> rx.Component:
+def section_detail(data, is_mobile: bool) -> rx.Component:
     return rx.cond(
         is_mobile,
         section_detail_mobile(data),
         section_detail_desktop(data)
     )
 
-def section_detail_desktop(data: Section) -> rx.Component:
+def section_detail_desktop(data) -> rx.Component:
     return rx.flex(
         rx.hstack(
-            section_icon(data.icon),
-            section_image_icon(data.image_icon),
+            section_icon(data['icon']),
+            section_image_icon(data['image_icon']),
             rx.vstack(
-                heading(data.title, as_="h3", size=Size.DEFAULT),
-                section_content(data.subtitle, data.description, 
-                    data.media, data.technologies),
+                heading(data['title'], as_="h3", size=Size.DEFAULT),
+                section_content(data['subtitle'], data['description'], 
+                    data['media'], data['technologies']),
                 spacing=Size.XX_SMALL.value
             ),
             spacing=Size.DEFAULT.value
         ),
-        section_detail_image(data.image),
-        section_detail_auxiliar(data.date),
+        section_detail_image(data['image']),
+        section_detail_auxiliar(data['date']),
         spacing=Size.DEFAULT.value,
         flex_direction="row"
     )
 
-def section_detail_mobile(data: Section) -> rx.Component:
+def section_detail_mobile(data) -> rx.Component:
     return rx.flex(
-        section_detail_image(data.image),
-        section_detail_auxiliar(data.date),
+        section_detail_image(data['image']),
+        section_detail_auxiliar(data['date']),
         rx.vstack(
             rx.center(
-                section_icon(data.icon, True),
-                section_image_icon(data.image_icon, True),
-                heading(data.title, as_="h3", size=Size.X_SMALL),
+                section_icon(data['icon'], True),
+                section_image_icon(data['image_icon'], True),
+                heading(data['title'], as_="h3", size=Size.X_SMALL),
                 spacing=Size.SMALL.value
             ),
-            section_content(data.subtitle, data.description, 
-                data.media, data.technologies, True),
+            section_content(data['subtitle'], data['description'], 
+                data['media'], data['technologies'], True),
             spacing=Size.SMALL.value
         ),
         spacing=Size.DEFAULT.value,
@@ -75,7 +75,7 @@ def section_image_icon(icon_image: str, is_mobile=False) -> rx.Component:
         )
     )
 
-def section_content(subtitle: str, description: list[str], media: list[Media],
+def section_content(subtitle: str, description: list[str], media,
         technologies: list[Technology], is_mobile=False) -> rx.Component:
     return rx.vstack(
         rx.vstack(
@@ -104,30 +104,30 @@ def section_content(subtitle: str, description: list[str], media: list[Media],
         spacing=Size.SMALL.value
     ) 
 
-def section_detail_techologies(data: list[Technology]) -> rx.Component:
+def section_detail_techologies(data) -> rx.Component:
     return rx.cond(
         data,
         rx.flex(
             *[
                 rx.badge(
-                    item.name,
+                    item['name'],
                     color_scheme="gray"
                 )
-                for item in data
+                for item in sorted(data, key = lambda x : x['name'])
             ],
             wrap="wrap",
             spacing=Size.XX_SMALL.value
         )
     )
 
-def section_detail_links(media: list[Media], is_mobile=False) -> rx.Component:
+def section_detail_links(media, is_mobile=False) -> rx.Component:
     return rx.cond(
         media,
         rx.hstack(
             *[
-                icon_button(item.icon,
-                    item.url,
-                    variant="solid" if item.is_primary else "surface",
+                icon_button(item['icon'],
+                    item['url'],
+                    variant="solid" if item['is_primary'] else "surface",
                     is_mobile=is_mobile
                 )
                 for item in media

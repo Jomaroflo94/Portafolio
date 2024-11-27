@@ -2,7 +2,7 @@ import reflex as rx
 
 from portafolio.styles.styles import EmSize, Size
 
-def badge(text: str, icon: str, icon_size: EmSize, badge_size="2") -> rx.Component:
+def badge(text: str, icon: str, icon_size: EmSize, badge_size="3") -> rx.Component:
     return rx.badge(
         rx.cond(
             icon != "",

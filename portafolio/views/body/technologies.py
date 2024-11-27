@@ -5,7 +5,7 @@ from portafolio.components.heading import heading
 from portafolio.services.data import Technology
 from portafolio.styles.styles import EmSize, Size
 
-def technologies(data : list[Technology], is_mobile: bool) -> rx.Component:
+def technologies(data, is_mobile: bool) -> rx.Component:
     return rx.vstack(
         rx.divider(),
         heading(
@@ -16,12 +16,12 @@ def technologies(data : list[Technology], is_mobile: bool) -> rx.Component:
             
             *[
                 badge(
-                    aptitude.name, 
-                    aptitude.icon,
+                    aptitude['name'], 
+                    aptitude['icon'],
                     EmSize.DEFAULT if is_mobile else EmSize.LARGE,
-                    Size.XX_SMALL.value if is_mobile else Size.X_SMALL.value
+                    Size.X_SMALL.value if is_mobile else Size.SMALL.value
                 )
-                for aptitude in sorted(data, key = lambda x : x.name)
+                for aptitude in sorted(data, key = lambda x : x['name'])
             ],
             spacing=Size.X_SMALL.value,
             wrap="wrap"

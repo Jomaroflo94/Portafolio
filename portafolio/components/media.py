@@ -4,13 +4,13 @@ from portafolio.components.icon_button import icon_button
 from portafolio.services.data import Media
 from portafolio.styles.styles import Size
 
-def media(data: list[Media], is_mobile=False) -> rx.Component:
+def media(data, is_mobile=False) -> rx.Component:
     return rx.flex(
         *[
-            icon_button(item.icon, 
-                f"{item.url}{item.text}", 
-                item.text,
-                "solid" if item.is_primary else "surface",
+            icon_button(item['icon'], 
+                f"{item['url']}{item['text']}", 
+                item['text'],
+                "solid" if item['is_primary'] else "surface",
                 is_mobile
             )
             for item in data

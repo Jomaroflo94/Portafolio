@@ -309,6 +309,46 @@
   ],
   "projects": [
     {
+      "icon": "tag",
+      "title": "Prueba de proyectos",
+      "subtitle": "Subtitulo",
+      "description": [
+        "Prueba de proyectos para comprobar hasta donde llega el ancho",
+        "Prueba de proyectos para comprobar hasta donde llega el ancho"
+      ],
+      "image": "/favicon.ico",
+      "technologies": [
+        {
+          "icon": "",
+          "name": "Stack 1"
+        },
+        {
+          "icon": "",
+          "name": "Stack 2"
+        },
+        {
+          "icon": "",
+          "name": "Stack 3"
+        }
+      ],
+      "media": [
+        {
+          "icon": "link",
+          "url": "https://url.com",
+          "is_primary": false
+        },
+        {
+          "icon": "github",
+          "url": "https://url.com",
+          "is_primary": false
+        },
+        {
+          "icon": "shield-check",
+          "url": "https://url.com"
+        }
+      ]
+    },
+    {
       "icon": "layout-template",
       "title": "Portafolio Web",
       "subtitle": "Plantilla de Portafolio",
