@@ -11,7 +11,7 @@ jobs:
     steps:
       # Configura el repositorio.
       - name: Checkout Code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       # Configura Python.
       - name: Setup Python
