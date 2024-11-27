@@ -5,7 +5,7 @@ from portafolio.components.heading import heading
 from portafolio.services.data import Other
 from portafolio.styles.styles import Size
 
-def others(data: list[Other], is_mobile: bool) -> rx.Component:
+def others(data, is_mobile: bool) -> rx.Component:
     return rx.cond(
         len(data) > 0,
         rx.vstack(
@@ -24,7 +24,7 @@ def others(data: list[Other], is_mobile: bool) -> rx.Component:
     )
 
 
-def others_mobile(data: list[Other]) -> rx.Component:
+def others_mobile(data) -> rx.Component:
     return rx.vstack(
         *[
             card_detail(item, True)
@@ -33,7 +33,7 @@ def others_mobile(data: list[Other]) -> rx.Component:
         spacing=Size.DEFAULT.value
     )
 
-def others_desktop(data: list[Other]) -> rx.Component:
+def others_desktop(data) -> rx.Component:
     return rx.grid(
         *[
             card_detail(item, False)

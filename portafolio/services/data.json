@@ -1,10 +1,10 @@
 {
   "profile": {
     "name": "Jose Manuel Romero Flores",
-    "position": "Backend Dev & Cloud",
-    "location": " Málaga, Andalucía, España",
-    "last_update": "22 Marzo 2024",
-    "avatar": "/avatar.jpg"
+    "position": "Senior .NET Dev & Cloud",
+    "location": " Granada, Andalucía, España",
+    "last_update": "27 Noviembre 2024",
+    "avatar": "/avatar.png"
   },
   "media": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "icon": "file-text",
-      "url": "https://drive.google.com/file/d/1g1fjLKSpXohig0g8NjO0iSSVck_F9F1X/view?usp=drive_link",
+      "url": "https://drive.google.com/file/d/1ocNNdoDBp64F0O19fS6skiaDUAaa8MeF/view?usp=drive_link",
       "is_primary": false
     },
     {
@@ -94,16 +94,72 @@
   ],
   "experiences": [
     {
-      "name": "Sogeti",
-      "image": "/company2.jpg",
+      "name": "Experian | Axesor",
+      "image": "/axesor_logo.jpeg",
+      "lineHeight": "1.0",
       "sections": [
         {
-          "title": "FullStack Dev & Cloud",
+          "title": "Senior Dev",
+          "subtitle": "Experian | Axesor",
+          "description": [
+            "Desarrollo, mantenimento y migraciones de aplicaciones internas a .NET 8"
+          ],
+          "date": "5 meses",
+          "technologies": [
+            {
+              "icon": "",
+              "name": ".NET"
+            },
+            {
+              "icon": "",
+              "name": "WebApi"
+            },
+            {
+              "icon": "",
+              "name": "SQL Server"
+            },
+            {
+              "icon": "",
+              "name": "IIS"
+            },
+            {
+              "icon": "",
+              "name": "REST"
+            },
+            {
+              "icon": "",
+              "name": "SOAP"
+            },
+            {
+              "icon": "",
+              "name": "SOLID"
+            },
+            {
+              "icon": "",
+              "name": "Design Patterns"
+            },
+            {
+              "icon": "",
+              "name": "OAuth2.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sogeti",
+      "image": "/company2.jpg",
+      "lineHeight": "2.5",
+      "sections": [
+        {
+          "title": "Team Leader / Senior Dev & Cloud",
           "subtitle": "Sogeti",
           "description": [
-            "Desarrollo de aplicaciones Web, WebApi REST y servicios de Windows."
+            "Desarrollo y migración de aplicaciones Web, Api REST, servicios de Windows, servicios de Azure y proveedores de Identidad.",
+            "Ponente en charlas de foro de empleo y cursos técnicos.",
+            "Entrevistador técnico."
           ],
-          "date": "4 años 6 meses",
+          "date": "4 años 10 meses",
           "technologies": [
             {
               "icon": "",
@@ -123,7 +179,7 @@
             },
             {
               "icon": "",
-              "name": ".Net"
+              "name": ".NET"
             },
             {
               "icon": "",
@@ -152,15 +208,23 @@
             {
               "icon": "",
               "name": "Design Patterns"
+            },
+            {
+              "icon": "",
+              "name": "OAuth2.0"
+            },
+            {
+              "icon": "",
+              "name": "IIS"
             }
           ]
         },
         {
-          "title": "Anls, Solution Dev",
+          "title": "Anls, Software Dev",
           "subtitle": "Sogeti",
           "description": [
-            "Desarrollo y mantenimiento de aplicaciones Web.",
-            "Gestión de AM, análisis y estimaciones de cambios."
+            "Análisis, desarrollo y mantenimiento de aplicaciones Web, Api REST y servicios de Azure",
+            "Gestión de AM, estimaciones y documentación"
           ],
           "date": "1 año 1 mes",
           "technologies": [
@@ -186,7 +250,7 @@
             },
             {
               "icon": "",
-              "name": ".Net"
+              "name": ".NET"
             },
             {
               "icon": "",
@@ -211,11 +275,15 @@
     {
       "name": "Avanade",
       "image": "/company1.jpg",
+      "lineHeight": "1.2",
       "sections": [
         {
-          "title": "Anls, Solution Dev",
+          "title": "Anls, Software Dev",
           "subtitle": "Avanade",
-          "description": ["Desarrollo y mantenimiento de aplicaciones Web."],
+          "description": [
+            "Formación para desarrollo de Software y aplicaciones Web con Angular, .NET y SQL Server.",
+            "Análisis y mantenimiento de aplicaciones Web."
+          ],
           "date": "1 año 1 mes",
           "technologies": [
             {
@@ -224,7 +292,7 @@
             },
             {
               "icon": "",
-              "name": ".Net"
+              "name": ".NET"
             },
             {
               "icon": "",

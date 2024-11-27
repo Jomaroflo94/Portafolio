@@ -6,7 +6,7 @@ from portafolio.services.data import Experience, Section
 from portafolio.styles.styles import EmSize, Size
 from portafolio.views.body.sections import sections
 
-def experiences(experiences: list[Experience], is_mobile: bool, 
+def experiences(experiences, is_mobile: bool, 
         title: str) -> rx.Component:
     return rx.cond(
         is_mobile,
@@ -14,21 +14,21 @@ def experiences(experiences: list[Experience], is_mobile: bool,
         experiences_desktop(experiences, title)
     )
 
-def experiences_desktop(experiences: list[Experience], title: str) -> rx.Component:
+def experiences_desktop(experiences, title: str) -> rx.Component:
     return rx.vstack(
         rx.divider(),
         heading(title, size=Size.X_LARGE),
         *[
             rx.hstack(
                 rx.vstack(
-                    company_image(item.image),
-                    vertical_divider(len(item.sections)),
+                    company_image(item['image']),
+                    vertical_divider(float(item['lineHeight'])),
                     spacing=Size.LARGE.value,
                     width="auto"
                 ),
                 rx.vstack(
-                    company_name(item.name),
-                    content(item.sections),
+                    company_name(item['name']),
+                    content(item['sections']),
                     padding_top=EmSize.SMALL.value,
                     spacing=Size.X_LARGE.value
                 ),
@@ -39,19 +39,19 @@ def experiences_desktop(experiences: list[Experience], title: str) -> rx.Compone
         spacing=Size.X_LARGE.value
     ) 
 
-def experiences_mobile(experiences: list[Experience], title: str) -> rx.Component:
+def experiences_mobile(experiences, title: str) -> rx.Component:
     return rx.vstack(
         rx.divider(),
         heading(title, size=Size.DEFAULT),
         *[
             rx.vstack(
                 rx.center(
-                    company_image(item.image, True),
-                    company_name(item.name, True),
+                    company_image(item['image'], True),
+                    company_name(item['name'], True),
                     spacing=Size.SMALL.value,
                     width="auto"
                 ),
-                content(item.sections, True),
+                content(item['sections'], True),
                 spacing=Size.DEFAULT.value
             )
             for item in experiences
@@ -74,7 +74,7 @@ def company_name(name: str, is_mobile=False) -> rx.Component:
         size=Size.DEFAULT.value if is_mobile else Size.X_LARGE.value
     )
 
-def vertical_divider(sections_lenght: int) -> rx.Component:
+def vertical_divider(sections_lenght: float) -> rx.Component:
     return rx.vstack(
         rx.divider(
             orientation="vertical",
@@ -86,7 +86,7 @@ def vertical_divider(sections_lenght: int) -> rx.Component:
         margin_left="50%"
     )
 
-def content(section_list: list[Section], is_mobile=False) -> rx.Component:
+def content(section_list, is_mobile=False) -> rx.Component:
     return rx.vstack(
         sections(
             section_list,
