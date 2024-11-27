@@ -37,7 +37,7 @@ def content(is_mobile=False) -> rx.Component:
         experiences(DATA['experiences'], is_mobile, "Experiencia"),
         sections(DATA['projects'], is_mobile, "Proyectos"),
         sections(DATA['training'], is_mobile, "Formación"),
-        others(DATA['others'], is_mobile),
+        # others(DATA['others'], is_mobile),
         footer(DATA['profile'], DATA['media'], is_mobile),
         spacing=Size.DEFAULT.value if is_mobile else Size.LARGE.value,
         max_width=MAX_WIDTH,
