@@ -28,11 +28,11 @@ jobs:
 
       # Exporta la aplicación Reflex.
       - name: Export Reflex App
-        run: reflex export
+        run: reflex export --frontend-only --no-zip
 
       # Despliega en GitHub Pages.
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend
+          publish_dir: ./.web/_static
