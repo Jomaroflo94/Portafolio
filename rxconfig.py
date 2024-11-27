@@ -1,5 +1,8 @@
 import reflex as rx
 
-config = rx.Config(
-    app_name="portafolio"
-)
+class Config(rx.Config):
+    app_name = "portafolio"
+    deploy_backend = False,
+    deploy_url = "https://jomaroflo94.github.io/Portafolio"
+
+config = Config()
