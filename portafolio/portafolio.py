@@ -13,7 +13,7 @@ from portafolio.services.data import data
 DATA = data;
 title = "Portafolio - Jose Manuel Romero Flores"
 description = DATA['profile']['name']
-image = "/avatar.jpg"
+image = DATA['profile']['avatar']
 
 def index() -> rx.Component:
     return rx.center(

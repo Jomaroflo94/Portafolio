@@ -30,9 +30,15 @@ jobs:
       - name: Export Reflex App
         run: reflex export --frontend-only --no-zip
 
+      # Corregir las rutas absolutas con el script
+      - name: Fix absolute paths to relative
+        run: |
+          python fix_paths_deploy.py
+
       # Despliega en GitHub Pages.
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.web/_static
+          publish_branch: gh-pages
