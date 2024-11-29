@@ -1,7 +1,6 @@
 import os
 
 export_dir = "./frontend"
-# export_dir = "./.web/_static"
 
 def replace_absolute_to_relative(directory):
     for root, _, files in os.walk(directory):
