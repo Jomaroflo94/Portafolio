@@ -55,11 +55,13 @@ def dark_mode_toggle() -> rx.Component:
                 rx.icon(tag="moon", size=20),
                 value="dark",
             ),
+            rx.segmented_control.item(
+                rx.icon(tag="sun", size=20),
+                value="light",
+            ),
             on_change=set_color_mode,
             variant="surface",
             radius="large",
-            value=color_mode,
-            default_value="dark"
-        ),
-        display="none"
+            value=color_mode
+        )
     )
