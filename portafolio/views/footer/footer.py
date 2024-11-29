@@ -63,5 +63,6 @@ def dark_mode_toggle() -> rx.Component:
             variant="surface",
             radius="large",
             value=color_mode
-        )
+        ),
+        display="none"
     )
