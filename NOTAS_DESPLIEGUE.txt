@@ -1,3 +1,0 @@
-reflex login
-
-reflex deploy (selecionar 'mad' como localizacion)

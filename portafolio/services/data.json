@@ -14,7 +14,7 @@
     },
     {
       "icon": "file-text",
-      "url": "https://drive.google.com/file/d/1ocNNdoDBp64F0O19fS6skiaDUAaa8MeF/view?usp=drive_link",
+      "url": "https://drive.google.com/file/d/1kCU6LPocKb1rFJfVvPIZIrefd5PMSrXk/view?usp=sharing",
       "is_primary": false
     },
     {
@@ -308,6 +308,88 @@
     }
   ],
   "projects": [
+    {
+      "icon": "chef-hat",
+      "title": "My Cooking App",
+      "subtitle": "Aplicación web de recetas de cocina",
+      "description": [
+        "(En proceso) Aplicación web personal para la gestión de recetas e inventario en cocina. Backend construido en .NET 8 con Clean Architecture siguiendo los patrones Mediator y CQRS entre otros. Base de datos PostgresSQL."
+      ],
+      "technologies": [
+        {
+          "icon": "",
+          "name": ".NET 8"
+        },
+        {
+          "icon": "",
+          "name": "Angular v19"
+        },
+        {
+          "icon": "",
+          "name": "PostgresSQL"
+        },
+        {
+          "icon": "",
+          "name": "Clean Architecture"
+        },
+        {
+          "icon": "",
+          "name": "Mediator"
+        },
+        {
+          "icon": "",
+          "name": "CQRS"
+        },
+        {
+          "icon": "",
+          "name": "Railway Oriented Programming"
+        }
+      ],
+      "media": [
+        {
+          "icon": "github",
+          "url": "https://github.com/Jomaroflo94/MyCookingRecipes",
+          "is_primary": false
+        }
+      ]
+    },
+    {
+      "icon": "key-round",
+      "title": "BFF Identity Server",
+      "subtitle": "Proveedor de Identidad con Proxy Inverso",
+      "description": [
+        "(En proceso) Proveedor de identidad securizado con BFF a través de servidor proxy inverso. Desarrollado en .NET 6 con Duende Identity (solo uso para desarrollo)."
+      ],
+      "technologies": [
+        {
+          "icon": "",
+          "name": ".NET 6"
+        },
+        {
+          "icon": "",
+          "name": "BFF"
+        },
+        {
+          "icon": "",
+          "name": "OAuth2.0"
+        },
+        {
+          "icon": "",
+          "name": "Duende Identity"
+        },
+        {
+          "icon": "",
+          "name": "Reverse Proxy"
+        }
+      ],
+      "media": [
+        {
+          "icon": "github",
+          "url": "https://github.com/Jomaroflo94/BFF-IdentityServer",
+          "is_primary": false
+        }
+      ]
+    },
     {
       "icon": "layout-template",
       "title": "Portafolio Web",
